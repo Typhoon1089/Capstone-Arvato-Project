@@ -25,6 +25,7 @@ As the last step of the project, the prediction result from Part 2 is submitted 
 2. `model/:` folder that contains all developed models.
 3. `cache/:` folder that contains parameters during model development.
 4. `Arvato_project_workbook.ipynb:` the main notebook that presents all steps of the project.
+5. `report.pdf:` the final report submitted to Arvato. Note that the report is associated with the first run of the notebook, so some of results may be slightly different.
 
 ## Installation<a name="installation"></a>
 The project is conducted using Amazon SageMaker and then tested in my local machine. 
