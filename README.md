@@ -21,12 +21,14 @@ The project contains three main steps:
 As the last step of the project, the prediction result from Part 2 is submitted to Kaggle[2] and compared against other submissions.
 
 ## Project organization<a name="organization"></a>
-1. `data/:` folder that contains the datasets (4 files) with their metadata files (2 files). This folder also includes PKL files of proceed datasets for fast loading data. As part of the terms and conditions of using datasets, I am not allowed to include them in this repository.
-2. `models/:` folder that contains all evaluated models
-3. `Arvato_project_workbook.ipynb:` the main notebook that presents all steps of the project.
+1. `data/:` folder that contains the datasets (4 files) with their metadata files (2 files). This folder also includes (i) PKL files of proceed datasets for fast loading data and (ii) _features-final.csv_ created after finishing data exploration. As part of the terms and conditions of using datasets, I am not allowed to include them in this repository.
+2. `model/:` folder that contains all developed models.
+3. `cache/:` folder that contains parameters during model development.
+4. `Arvato_project_workbook.ipynb:` the main notebook that presents all steps of the project.
 
 ## Installation<a name="installation"></a>
-The project is conducted using Amazon SageMaker. Besides the libraries included in the Anaconda distribution for Python 3.6 the following libraries have been included in this project:
+The project is conducted using Amazon SageMaker and then tested in my local machine. 
+Besides the libraries included in the Anaconda distribution for Python 3.6 the following libraries have been included in this project:
 * `progressbar` - library to display progressbar
 * `lightgbm` - gradient boosting framework that uses tree based learning algorithms.
 * `py-xgboost` - optimized distributed gradient boosting library designed to be highly efficient, flexible and portable.
@@ -39,12 +41,12 @@ To install the above libraries from Jupyter Notebook:
 As stated above the data for this project is not public, the notebook and models provided by this repository cannot be used but they serve as a snapshot of the capstone project.
 
 ## Results<a name="results"></a>
-_later_
+The model has a score of 0.792 that is only 0.018 smaller than the best score recorded on Kaggle competition.
 
 ## Acknowledgements<a name="acknowledgements"></a>
 My sincere gratitude to Arvato Financial Solutions for the datasets/files and to Udacity for making this project possible.
 
 ## References<a name="references"></a>
-[1] [Arvato website](https://www.bertelsmann.com/divisions/arvato/#st-1)
+[1] [Arvato Financial](https://finance.arvato.com)
 
 [2] [Kaggle Prediction Competition](https://www.kaggle.com/c/udacity-arvato-identify-customers)
