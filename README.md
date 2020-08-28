@@ -3,11 +3,12 @@
 ### Table of Contents
 
 1. [Introduction](#introduction)
-2. [Project organization](#organization)
-3. [Installation](#installation)
-4. [Results](#results)
-5. [Acknowledgements](#acknowledgements)
-6. [References](#references)
+2. [Dataset](#dataset)
+3. [Project organization](#organization)
+4. [Installation](#installation)
+5. [Results](#results)
+6. [Acknowledgements](#acknowledgements)
+7. [References](#references)
 
 ## Introduction<a name="introduction"></a>
 In this project, we work with Arvato's datasets[1] to provide a solution to the customer segmentation/prediction problem of a mail-order sales company. Various machine learning techniques are applied to identify the customers for a marketing campaign of the company. 
@@ -19,6 +20,13 @@ The project contains three main steps:
 2. **Customer prediction task:** Leverage insights observed in the previous parts to develop a supervised learning model that could predict whether an individual would respond to a mail campaign.
 
 As the last step of the project, the prediction result from Part 2 is submitted to Kaggle[2] and compared against other submissions.
+
+## Dataset<a name="data"></a>
+In this project, Arvato provides us four demographic files. Each file contains one dataset and in CSV (Comma-separated values) format, in which each row represents demographics of an individual and each column represents an attribute.
+*	Udacity_AZDIAS_052018.csv: Demographics data for the general population of Germany; 891,211 persons (rows) x 366 features (columns),
+*	Udacity_CUSTOMERS_052018.csv: Demographics data for customers of the mail-order company; 191,652 persons (rows) x 369 features (columns),
+*	Udacity_MAILOUT_052018_TRAIN.csv: Demographics data for individuals who were targets of a marketing campaign; 42,982 persons (rows) x 367 (columns),
+*	Udacity_MAILOUT_052018_TEST.csv: Demographics data for individuals who were targets of a marketing campaign; 42,833 persons (rows) x 366 (columns). 
 
 ## Project organization<a name="organization"></a>
 1. `data/:` folder that contains the datasets (4 files) with their metadata files (2 files). This folder also includes (i) PKL files of proceed datasets for fast loading data and (ii) _features-final.csv_ created after finishing data exploration. As part of the terms and conditions of using datasets, I am not allowed to include them in this repository.
